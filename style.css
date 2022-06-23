@@ -1,0 +1,242 @@
+:root{
+    --color: #C499BA;
+    --bg: whitesmoke;
+    --color2: white;
+}
+
+*{
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    font-family: 'Anek Malayalam', sans-serif;
+}
+nav{
+    width: 100%;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    display: inline;
+    margin-right: 30px;
+    color: var(--color);
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    font-weight: 700;
+}
+
+nav a:hover{
+    border: 1.5px solid var(--color);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.icon {
+    display: none;
+}
+
+.banner{
+    width: 100%;
+    margin-top: 150px;
+}
+
+.inside-banner{
+    background-color: var(--color);
+    color: var(--color2);
+    text-align: center;
+    font-size: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.slogan{
+    text-align: center;
+    font-size: 20px;
+}
+
+.line{
+    width: 100%;
+    background: var(--color);
+    height: 2px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.sinopsis{
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--bg);
+}
+
+.card{
+    background-color: var(--bg);
+    border-radius: 15px;
+    margin-left: 30px;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 var(--color);
+    transition: 0.3s;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.card:nth-child(1){
+    margin-top: 40px;
+}
+
+.author{
+    text-align: center;
+}
+
+img{
+    width: 200px;
+}
+
+img.book-img, img.profile-img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img.profile-img{
+    border-radius: 50%;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.book-title{
+    text-align: center;
+    background-color: var(--bg);
+}
+
+/*Informasi*/
+.card-profile{
+    width: 65%;
+    margin-top: 65px;    
+    margin-right: 30px;
+    box-shadow: 0 4px 8px 0 var(--color);
+    padding: 10px;
+    height: 25%;
+    text-align: left;
+    border-radius: 15px;
+    background-color: var(--color);
+}
+
+.biodata{
+    text-align: center;
+}
+
+h3, table, tr, th, td{
+    background-color: var(--color);
+    color: var(--color2);
+}
+
+.bio-line{
+    background-color: var(--color2);
+    height: 1px;
+}
+.section{
+    background-color: var(--color);
+    color: var(--color2);
+    height: 10%;
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.section.dua{
+    margin-top: 30px;
+}
+
+footer{
+    text-align: left;
+    font-weight: 700;
+    font-size: 10px;
+    color: var(--color);
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 830px) {
+    *{
+        width: 100%;
+        margin: 0;
+    }
+    .flex-container{
+        flex-direction: column;
+    }
+    nav a{
+        display: none;
+    }
+    nav a.icon.menu{
+        text-align: right;
+        display: block;
+        margin-right: 10px;
+    }
+    nav a.icon.close{
+        display: none;
+    }
+
+    .inside-banner{
+        font-size: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-top: 30px;    
+    }
+
+    .banner{
+        margin-top: 10px;
+    }
+
+    .card{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sinopsis{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .card-profile{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 70%;
+    }
+
+    .section{
+        width: 50%;
+        margin-left: 0;
+    }
+}
+
+/*after "responsive" class added when the icon clicked,
+ using javascript*/
+
+@media screen and (max-width: 830px) {
+    .nav.responsive{
+        position: relative
+    }
+    .nav.responsive a.icon.menu{
+        display: none;
+    }
+    .nav.responsive a.icon.close{
+        text-align: right;
+        display: block;
+    }
+    .nav.responsive a{
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+}

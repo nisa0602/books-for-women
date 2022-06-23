@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Books for Womens</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam&family=Inconsolata&family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="container">
+        <header>
+            <nav class="nav" id="navbar">
+                <a href="javascript:void(true);" 
+                    class="icon close" onclick="closeNav()">
+                    <i class="fa fa-window-close"></i>
+                </a>
+                <a href="#non">Non Fiction</a>
+                <a href="#fiction">Fiction</a>
+                <a href="#about">About</a>
+                <a href="javascript:void(true);" 
+                    class="icon menu" onclick="responsiveNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+            <div class="jumbotron">
+                <div class="banner">
+                    <h1 class="inside-banner">Books for Women</h1>
+                </div>
+                <h4 class="slogan">Read these books, and be proud of yourself. As a women.</h4>
+                <div class="line"></div>
+            </div>
+        </header>
+        <div class="flex-container">
+            <main class="flex-column">
+                <section class="flex-row">
+                    <div id="non" class="section">Non Fiction</div>
+                    <article class="card">
+                        <h2 class="book-title">Becoming</h2>
+                        <h4 class="author">by. Michelle Obama</h4>
+                        <img class="book-img" src="img/becoming.jpg" alt="book-img">
+                        <p class="sinopsis">
+                            In her memoir, a work of deep reflection and mesmerizing storytelling, 
+                            Michelle Obama invites readers into her world, 
+                            chronicling the experiences that have shaped her—from her childhood on the South Side of Chicago 
+                            to her years as an executive balancing the demands of motherhood and work, 
+                            to her time spent at the world’s most famous address.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h2 class="book-title">I am Malala</h2>
+                        <h4 class="author">by. Malala Yousafzai</h4>
+                        <img class="book-img" src="img/malala.jpg" alt="book-img">
+                        <p class="sinopsis">
+                            I Am Malala is the remarkable tale of a family uprooted by global terrorism, 
+                            of the fight for girls' education, of a father who, himself a school owner, 
+                            championed and encouraged his daughter to write and attend school, 
+                            and of brave parents who have a fierce love for their daughter in a society that prizes sons.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h2 class="book-title">The Blue Book</h2>
+                        <h4 class="author">by. Tarshi</h4>
+                        <img class="book-img" src="img/blue.jpg" alt="book-img">
+                        <p class="sinopsis">
+                            Am I attractive?  Am I ‘normal’?  Do I even want to be?  When is the right time to start having sex?  
+                            What is sex really all about?  How will I know if my relationship is good for me?  
+                            Written specifically for adolescents, The Blue Book is a guide to exploring sexuality and sexual feelings, 
+                            as well as a trustworthy fact-finding and fact-checking resource.
+                        </p>
+                    </article>
+                </section>
+
+                <section class="flex-row">
+                    <div id="fiction" class="section dua">Fiction</div>
+                    <article class="card">
+                        <h2 class="book-title">The Midnight Library</h2>
+                        <h4 class="author">by. Matt Haig</h4>
+                        <img class="book-img" src="img/library.jpg" alt="book-img">
+                        <p class="sinopsis">
+                            In The Midnight Library, Matt Haig’s enchanting new novel, Nora Seed finds herself faced with this decision. 
+                            Faced with the possibility of changing her life for a new one, following a different career,
+                            undoing old breakups, realizing her dreams of becoming a glaciologist; 
+                            she must search within herself as she travels through the Midnight Library to decide what is truly fulfilling in life, 
+                            and what makes it worth living in the first place.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h2 class="book-title">The Shark Caller</h2>
+                        <h4 class="author">by. Zillah Bethell</h4>
+                        <img class="book-img" src="img/shark.jpg" alt="book-img">
+                        <p class="sinopsis">
+                            Desperate to become a shark caller to avenge the death of her parents, 
+                            Blue Wing is instead charged with befriending infuriating newcomer Maple. 
+                            At first they are angry and out of sync with the island and each other. 
+                            But when the tide breathes the promise of treasure, can they overcome their differences and brave the deadliest shark in the ocean?
+                        </p>
+                    </article>
+                </section>
+            </main>
+            <aside class="card-profile flex-column" id="about">
+                <section class="info"></section>
+                    <div class="bio-line"></div>
+                    <img class="profile-img" src="img/profile.jpg" alt="profile">
+                    <h3 class="biodata">Biodata</h3>
+                    <table>
+                        <tr>
+                            <th>Nama:</th>
+                            <td>Khoirun Nisa' Hidayatika</td>
+                        </tr>
+                        <tr>
+                            <th>Alamat:</th>
+                            <td>Nganjuk, Jawa Timur</td>
+                        </tr>
+                        <tr>
+                            <th>No Hp:</th>
+                            <td>085935256070</td>
+                        </tr>
+                    </table>
+                    <div class="bio-line"></div>
+                </section>
+            </aside>
+        </div>
+        <footer>© 2022 NisaHidayatika</footer>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
